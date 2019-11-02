@@ -11,8 +11,8 @@ import { NavController, LoadingController } from '@ionic/angular';
 export class SonglistPage implements OnInit {
 
   song: Song = {
-    song: 'song',
-    artist: 'artist',
+    song: '',
+    artist: '',
     createdAt: new Date().getTime(),
     priority: 1
   };
@@ -41,8 +41,21 @@ export class SonglistPage implements OnInit {
     });
   }
 
-  async saveSong() {
+  async removeSong() {
+    const loading = await this.loadingController.create({
+      message: 'Deleting item..'
+    });
+    await loading.present();
 
+    if (this.songId) {
+      this.songService.removeSong(this.songId).then(() => {
+        loading.dismiss();
+        this.router.navigateByUrl('home');
+      });
+    }
+  }
+
+  async saveSong() {
     const loading = await this.loadingController.create({
       message: 'Saving item..'
     });

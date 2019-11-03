@@ -6,7 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
-/* Ari Martelius, 1800582 */
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
 describe('AppComponent', () => {
 
   let statusBarSpy, splashScreenSpy, platformReadySpy, platformSpy;

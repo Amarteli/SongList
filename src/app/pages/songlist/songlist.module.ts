@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { SonglistPage } from './songlist.page';
-
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
 const routes: Routes = [
   {
     path: '',

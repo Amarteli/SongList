@@ -2,7 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SonglistPage } from './songlist.page';
-
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
 describe('SonglistPage', () => {
   let component: SonglistPage;
   let fixture: ComponentFixture<SonglistPage>;

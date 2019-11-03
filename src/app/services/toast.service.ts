@@ -3,6 +3,8 @@ import { ToastController } from '@ionic/angular';
 @Injectable({
   providedIn: 'root'
 })
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
+/* error showed with this, not ymplemented yet */
 export class ToastService {
 
   constructor(private toastController: ToastController) {}

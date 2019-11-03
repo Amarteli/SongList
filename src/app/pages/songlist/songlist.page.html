@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
  
-<ion-content padding>
+<ion-content class="ion-padding">
   <ion-list lines="full">
     <ion-item>
         <ion-label position="floating">Song</ion-label>
@@ -22,7 +22,8 @@
       <ion-input required type="number" [(ngModel)]="song.priority"></ion-input>
     </ion-item>
   </ion-list>
-  <ion-button expand="full" (click)="removeSong(song.id)"  color="secondary">Delete</ion-button>
+  
+  <ion-button *ngIf="song.song.length !== 0" expand="full" id="hideit" (click)="removeSong(song.id)"  color="secondary">Delete</ion-button>
   
   <ion-button expand="full" (click)="saveSong()">Save</ion-button>
 </ion-content>

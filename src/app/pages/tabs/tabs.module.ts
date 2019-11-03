@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 import { TabsPage } from './tabs.page';
-
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
 const routes: Routes = [
   {
     path: '',

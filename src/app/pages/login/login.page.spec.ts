@@ -2,7 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoginPage } from './login.page';
-
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
 describe('LoginPage', () => {
   let component: LoginPage;
   let fixture: ComponentFixture<LoginPage>;

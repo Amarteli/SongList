@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from 'src/environments/environment';
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

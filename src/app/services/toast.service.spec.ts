@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { ToastService } from './toast.service';
-
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
 describe('ToastService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
 export interface Song {
   id?: string;
   song: string;
@@ -13,6 +13,8 @@ export interface Song {
 @Injectable({
   providedIn: 'root'
 })
+
+/* Song service to use database */
 export class SongsService {
   private songsCollection: AngularFirestoreCollection<Song>;
 

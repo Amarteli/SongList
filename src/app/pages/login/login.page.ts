@@ -3,7 +3,7 @@ import { NavController } from '@ionic/angular';
 import * as firebase from 'firebase';
 import 'firebase/auth';
 import { ToastService } from './../../services/toast.service';
-
+/* Ari Martelius (1800582), Tommi Ralli (1800583) */
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -12,17 +12,15 @@ import { ToastService } from './../../services/toast.service';
 export class LoginPage implements OnInit {
   email;
   password;
-  
+
   constructor( public navCtrl: NavController, private toastService: ToastService) { }
-
-
+/* link to register page */
   ngOnInit() {
-
   }
   goToRegisterPage() {
     this.navCtrl.navigateForward('/tabs/register');
   }
-
+/* Login check from firebase */
   onLogin(email, password) {
     let errormsg = null;
     firebase
@@ -31,10 +29,7 @@ export class LoginPage implements OnInit {
     .then(data => {
       this.navCtrl.navigateRoot('/tabs');
     })
-
     .catch(function(error) {
-    // Handle Errors here.
-
     const  errorCode = error.code;
 
     errormsg = error.message;

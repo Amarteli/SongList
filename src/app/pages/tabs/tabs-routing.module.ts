@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
-/* Ari Martelius, 1800582
+/* Ari Martelius (1800582), Tommi Ralli (1800583)
   Here navigation is handled, all needed pages are added here.
-  About -page is set to be default.  */
+  Main -page is set to be default.  */
 const routes: Routes = [
   {
     path: 'tabs',
@@ -11,7 +11,7 @@ const routes: Routes = [
     children:
       [
         {
-          path: 'details',
+          path: 'songlist',
           children:
             [
               {
@@ -27,6 +27,16 @@ const routes: Routes = [
               {
                 path: '',
                 loadChildren: 'src/app/pages/about/about.module#AboutPageModule'
+              }
+            ]
+        },
+        {
+          path: 'details',
+          children:
+            [
+              {
+                path: '',
+                loadChildren: 'src/app/home/home.module#HomePageModule'
               }
             ]
         },

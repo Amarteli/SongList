@@ -4,8 +4,8 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import * as firebase from 'firebase';
-/* Ari Martelius, 1800582
-  Here i created sidemenu */
+/* Ari Martelius (1800582), Tommi Ralli (1800583)
+  Here sidemenu is created */
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',

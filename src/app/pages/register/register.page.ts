@@ -11,12 +11,18 @@ import 'firebase/auth';
 export class RegisterPage implements OnInit {
   newEmail;
   newPassword;
-
+  tabBarElement: any;
   constructor(public navCtrl: NavController) { }
 
   /* registering new user */
   ngOnInit() {
-  }
+
+   // this.tabBarElement = document.querySelector('.tabbar.show-tabbar');
+    this.tabBarElement = document.getElementById('hidemain');
+    this.tabBarElement.style.display = 'none';
+  // id="hideit"
+      }
+
   registerUser(email, password) {
     return new Promise<any>((resolve, reject) => {
       firebase.auth().createUserWithEmailAndPassword(email, password)

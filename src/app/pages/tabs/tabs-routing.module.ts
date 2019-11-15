@@ -61,6 +61,16 @@ const routes: Routes = [
             ]
         },
         {
+          path: 'search',
+          children:
+            [
+              {
+                path: '',
+                loadChildren: 'src/app/pages/search/search.module#SearchPageModule'
+              }
+            ]
+        },
+        {
           path: 'home',
           children:
             [

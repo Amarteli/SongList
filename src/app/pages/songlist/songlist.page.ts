@@ -13,16 +13,20 @@ export class SonglistPage implements OnInit {
   song: Song = {
     song: '',
     artist: '',
+    notes: '',
     createdAt: new Date().getTime(),
     priority: 1
   };
 
   songId = null;
-
+  tabBarElement: any;
   constructor(private route: ActivatedRoute, private nav: NavController, private router: Router,
               private songService: SongsService, private loadingController: LoadingController) { }
 /* getting song id */
   ngOnInit() {
+    this.tabBarElement = document.getElementById('hidemain');
+    this.tabBarElement.style.display = 'flex';
+
     this.songId = this.route.snapshot.params.id;
     if (this.songId)  {
       this.loadSong();

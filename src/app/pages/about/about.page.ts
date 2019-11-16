@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.page.scss'],
 })
 export class AboutPage implements OnInit {
-
+  tabBarElement: any;
   constructor() { }
 
   ngOnInit() {
+    this.tabBarElement = document.getElementById('hidemain');
+    this.tabBarElement.style.display = 'flex';
   }
 
 }

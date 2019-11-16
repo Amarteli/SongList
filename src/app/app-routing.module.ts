@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: 'details/:id', loadChildren: 'src/app/pages/songlist/songlist.module#SonglistPageModule'},
   { path: 'details', loadChildren: 'src/app/pages/songlist/songlist.module#SonglistPageModule' },
 
-
 ];
 
 @NgModule({

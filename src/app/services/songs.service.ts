@@ -8,6 +8,7 @@ export interface Song {
   song: string;
   artist: string;
   priority: number;
+  notes: string;
   createdAt: number;
 }
 @Injectable({

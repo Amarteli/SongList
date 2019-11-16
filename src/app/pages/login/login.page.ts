@@ -8,6 +8,7 @@ import { ToastService } from './../../services/toast.service';
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
+
 })
 export class LoginPage implements OnInit {
   email;

@@ -7,10 +7,12 @@ import {Router, Event, NavigationEnd} from '@angular/router';
   styleUrls: ['./tabs.page.scss'],
 })
 export class TabsPage implements OnInit {
-
+  tabBarElement: any;
   constructor() { }
 
   ngOnInit() {
+    this.tabBarElement = document.getElementById('hidemain');
+    this.tabBarElement.style.display = 'flex';
   }
 
 }

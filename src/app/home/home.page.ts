@@ -7,12 +7,14 @@ import { Song, SongsService } from '../services/songs.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-
+  tabBarElement: any;
   songs: Song[];
 
   constructor(private SongService: SongsService) { }
 /* App gets song-data from firebase */
   ngOnInit() {
+    this.tabBarElement = document.getElementById('hidemain');
+    this.tabBarElement.style.display = 'flex';
     this.SongService.getSongs().subscribe(res => {
       this.songs = res;
     });

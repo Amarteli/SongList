@@ -34,14 +34,17 @@ export class AppComponent {
     this.navigate =
     [
       {
+        icon : 'home',
         title : 'Home',
         url   : 'tabs/main'
       },
       {
+        icon : 'list',
         title : 'Song list',
         url   : 'tabs/home'
       },
       {
+        icon : 'help',
         title : 'About',
         url   : 'tabs/about'
       },
